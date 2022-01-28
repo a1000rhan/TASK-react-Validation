@@ -31,6 +31,7 @@ const RegistrationForm = () => {
     watch,
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
+
   const onSubmit = (data) => console.log(data);
   return (
     <div className="container">
